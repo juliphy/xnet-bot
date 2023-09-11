@@ -4,7 +4,7 @@ import random
 import string
 from telebot import formatting
 
-token = "6206026868:AAFj5a88DMMwQMCf_4irVsc4LQ4Ybr6M9sM"
+token = "6206026868:AAGczQ7SpbtTl_XSTVUdRot7ifqfyhovXW0"
 length = 12
 users = {}
 server_url = 'https://xnet-server.onrender.com' # IP или URL сервера (xnet-server) # server_url = 'http://127.0.0.1:3132'
