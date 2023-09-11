@@ -4,7 +4,7 @@ import random
 import string
 from telebot import formatting
 
-token = "6206026868:AAGczQ7SpbtTl_XSTVUdRot7ifqfyhovXW0"
+token = "6633313428:AAEwXTmYmP7bheaxd-jR2IpUMrqUKQnmUJ0"
 length = 12
 users = {}
 server_url = 'https://xnet-server.onrender.com' # IP или URL сервера (xnet-server) # server_url = 'http://127.0.0.1:3132'
@@ -30,9 +30,7 @@ class User:
 
 user = User()
 
-
 bot = telebot.TeleBot(token, parse_mode='HTML') # You can set parse_mode by default. HTML or MARKDOWN
-
 
 def get_image_link(message):
     response_dict = message.json
@@ -71,7 +69,7 @@ def delete_handler(message):
         bot.reply_to(message, 'У тебя нет профиля. Создаем...')
         generate_handler(message)
     else:
-        bot.send_message(message.chat.id, 'Что-то сломалось')
+        bot.send_message(message.chat.id, 'Что-то сломалось :(')
                 
 
 @bot.message_handler(commands=['info'])
